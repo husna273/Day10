@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvRentCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="10dp"
+        android:text="Husna's Rent Car"
+        android:textColor="#A5A0A0"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvcartype"
+        android:layout_marginTop="40dp"
+        android:text="Car Type :"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:id="@+id/rgCarType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:hint="@string/rgcartype"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <RadioButton
+            android:id="@+id/btnPajero"
+            android:text="Pajero"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <RadioButton
+            android:id="@+id/btnAlphard"
+            android:text="Alphard"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <RadioButton
+            android:id="@+id/btnInova"
+            android:text="Inova"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <RadioButton
+            android:id="@+id/btnBrio"
+            android:text="Brio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvCity"
+        android:layout_marginTop="10dp"
+        android:text="City :"
+        android:textSize="20sp"
+        android:layout_below="@+id/rgCarType"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:id="@+id/rgCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:hint="rgCity"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+        <RadioButton
+            android:id="@+id/btnInsideCity"
+            android:text="Inside City"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <RadioButton
+            android:id="@+id/btnOutsideCity"
+            android:text="Outside City"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvDay_of_Rent"
+        android:layout_marginTop="40dp"
+        android:text="Day :"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tiTotalDay"
+        android:layout_below="@+id/tvDay_of_Rent"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ettotalDay"
+            android:hint="totalDaya"
+            android:layout_width="330dp"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            android:layout_below="@+id/etinputname"
+            android:drawableStart="@drawable/baseline_123_24"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnRent"
+        android:layout_marginTop="20dp"
+        android:background="#024"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="10dp"
+        android:layout_marginLeft="130dp"
+        android:text="Rent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

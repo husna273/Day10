@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Day10</string>
+    <string name="rgcartype">rgCarType</string>
+    <string name="store">store</string>
+    <string name="hope">hope</string>
+    <string name="welcome">welcome</string>
+    <string name="thanks">Thank you for Coming</string>
+    <string name="total_bayar">Total Bayar</string>
+    <string name="disc">Disc :</string>
+    <string name="day_of_rent">Day Of Rent :</string>
+    <string name="outside_inside">Outside/Inside :</string>
+    <string name="car_type">Car Type :</string>
+    <string name="membership">Membership</string>
+</resources>
